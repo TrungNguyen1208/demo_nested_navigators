@@ -2,9 +2,10 @@ import 'package:demo_push_keep_bottom_nav/tab/tab_item.dart';
 import 'package:flutter/material.dart';
 
 class BottomNavigation extends StatelessWidget {
-  BottomNavigation({@required this.currentTab, @required this.onSelectTab});
   final TabItem currentTab;
   final ValueChanged<TabItem> onSelectTab;
+
+  BottomNavigation({@required this.currentTab, @required this.onSelectTab});
 
   @override
   Widget build(BuildContext context) {
